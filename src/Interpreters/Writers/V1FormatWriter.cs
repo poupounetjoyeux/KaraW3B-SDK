@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using KaraW3B.SDK.Helpers;
 using KaraW3B.SDK.Helpers.Interfaces;
+using KaraW3B.SDK.Interpreters.Interfaces;
 
 namespace KaraW3B.SDK.Interpreters.Writers
 {

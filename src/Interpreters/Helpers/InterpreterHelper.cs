@@ -3,6 +3,7 @@ using System.Globalization;
 using System.Text.RegularExpressions;
 using KaraW3B.SDK.Helpers;
 using KaraW3B.SDK.Helpers.Interfaces;
+using KaraW3B.SDK.Interpreters.Interfaces;
 using KaraW3B.SDK.Interpreters.Models.Interpreters;
 
 namespace KaraW3B.SDK.Interpreters.Helpers

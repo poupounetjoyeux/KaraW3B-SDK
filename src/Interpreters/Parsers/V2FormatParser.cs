@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using KaraW3B.SDK.Helpers.Interfaces;
+using KaraW3B.SDK.Interpreters.Interfaces;
 using KaraW3B.SDK.Interpreters.Models.Interpreters;
 
 namespace KaraW3B.SDK.Interpreters.Parsers

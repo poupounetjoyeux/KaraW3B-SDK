@@ -1,6 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using KaraW3B.SDK.Helpers.Interfaces;
+using KaraW3B.SDK.Interpreters.Interfaces;
 using KaraW3B.SDK.Interpreters.Models.Exceptions;
 using KaraW3B.SDK.Interpreters.Writers;
 

@@ -9,6 +9,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
+using KaraW3B.SDK.Interpreters.Interfaces;
 
 namespace KaraW3B.SDK.Interpreters
 {
