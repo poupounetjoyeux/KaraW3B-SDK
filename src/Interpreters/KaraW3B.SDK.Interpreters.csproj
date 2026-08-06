@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<RootNamespace>KaraW3B.SDK.Interpreters</RootNamespace>
+		<AssemblyName>KaraW3B.SDK.Interpreters</AssemblyName>
+		<PackageId>KaraW3B.SDK.Interpreters</PackageId>
+		<IsPackable>True</IsPackable>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include="..\Helpers\KaraW3B.SDK.Helpers.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+</Project>

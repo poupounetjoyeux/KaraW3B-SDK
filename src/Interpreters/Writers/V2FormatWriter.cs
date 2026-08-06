@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using KaraW3B.Interpreters.Interfaces;
+using KaraW3B.SDK.Helpers.Interfaces;
 
-namespace KaraW3B.Interpreters.Writers
+namespace KaraW3B.SDK.Interpreters.Writers
 {
     internal sealed class V2FormatWriter: V1FormatWriter
     {

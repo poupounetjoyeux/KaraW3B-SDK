@@ -1,8 +1,8 @@
-﻿using KaraW3B.Interpreters.Interfaces;
+﻿using KaraW3B.SDK.Helpers.Interfaces;
 
-namespace KaraW3B.Interpreters.Models.Internals
+namespace KaraW3B.SDK.Interpreters.Models.Interpreters
 {
-    internal sealed class ParsedNote : ISongNote
+    public sealed class ParsedNote : ISongNote
     {
         public int FileLine { get; init; }
 

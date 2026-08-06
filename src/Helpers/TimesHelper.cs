@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace KaraW3B.Interpreters.Helpers
+namespace KaraW3B.SDK.Helpers
 {
     public static class TimesHelper
     {

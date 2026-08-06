@@ -1,11 +1,11 @@
-﻿using KaraW3B.Interpreters.Interfaces;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Globalization;
 using System.Text.RegularExpressions;
-using KaraW3B.Interpreters.Models;
-using KaraW3B.Interpreters.Models.Internals;
+using KaraW3B.SDK.Helpers;
+using KaraW3B.SDK.Helpers.Interfaces;
+using KaraW3B.SDK.Interpreters.Models.Interpreters;
 
-namespace KaraW3B.Interpreters.Helpers
+namespace KaraW3B.SDK.Interpreters.Helpers
 {
     internal static class InterpreterHelper
     {
@@ -16,15 +16,6 @@ namespace KaraW3B.Interpreters.Helpers
             "BPM"
         };
 
-        public static readonly HashSet<char> SupportedNoteTypes = new()
-        {
-            DefaultNoteType,
-            'G',
-            'R',
-            '*',
-            ':'
-        };
-
         public static readonly Dictionary<string, string> DefaultHeaderAliases = new()
         {
             { "AUTHOR", "CREATOR" },
@@ -33,9 +24,6 @@ namespace KaraW3B.Interpreters.Helpers
 
         public const int MaxRecommendedHeaderSize = 2048;
         public const char ListSplitter = ',';
-        public const char EndOfFileMarker = 'E';
-        public const char EndOfPhraseNoteType = '-';
-        public const char DefaultNoteType = 'F';
 
         #region Common regex
 
@@ -62,11 +50,11 @@ namespace KaraW3B.Interpreters.Helpers
         {
             if (noteType.Length != 1)
             {
-                return DefaultNoteType;
+                return SongConstants.DefaultNoteType;
             }
 
             var type = noteType[0];
-            return !SupportedNoteTypes.Contains(type) ? DefaultNoteType : type;
+            return !SongConstants.SupportedNoteTypes.Contains(type) ? SongConstants.DefaultNoteType : type;
         }
 
         public static void ComputeMedleyTimesFromBeats(InterpreterResult result, IInterpretableSong song, int medleyStartBeat, int medleyEndBeat)

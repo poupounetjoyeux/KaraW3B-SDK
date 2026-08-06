@@ -4,10 +4,10 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using KaraW3B.Interpreters.Interfaces;
-using KaraW3B.Interpreters.Models.Analyzes;
+using KaraW3B.SDK.Helpers.Interfaces;
+using KaraW3B.SDK.Helpers.Models.Analyzes;
 
-namespace KaraW3B.Interpreters.Helpers
+namespace KaraW3B.SDK.Helpers
 {
     /// <summary>
     ///     Song error checkers are based on https://github.com/UltraStar-Deluxe/format and https://usdx.eu/format/
@@ -257,7 +257,7 @@ namespace KaraW3B.Interpreters.Helpers
                                 analyzedNote));
                         }
 
-                        if (analyzedNote.Type == InterpreterHelper.EndOfPhraseNoteType)
+                        if (analyzedNote.Type == SongConstants.EndOfPhraseNoteType)
                         {
                             if (i == 0)
                             {
@@ -266,7 +266,7 @@ namespace KaraW3B.Interpreters.Helpers
                                 continue;
                             }
 
-                            if (orderedPlayerNotes[i - 1].Type == InterpreterHelper.EndOfPhraseNoteType)
+                            if (orderedPlayerNotes[i - 1].Type == SongConstants.EndOfPhraseNoteType)
                             {
                                 errors.Add(new NoteAnalyzeError("There is subsequent end of phrase markers",
                                     analyzedNote));

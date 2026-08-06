@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
-		<RootNamespace>KaraW3B.Interpreters.Tests</RootNamespace>
-		<AssemblyName>KaraW3B.Interpreters.Tests</AssemblyName>
+		<RootNamespace>KaraW3B.SDK.Tests</RootNamespace>
+		<AssemblyName>KaraW3B.SDK.Tests</AssemblyName>
 		<OutputPath>..\..\bin\Tests</OutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Interpreters\KaraW3B.Interpreters.csproj" />
+		<ProjectReference Include="..\Interpreters\KaraW3B.SDK.Interpreters.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

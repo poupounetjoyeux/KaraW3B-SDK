@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
-		<RootNamespace>KaraW3B.Interpreters</RootNamespace>
-		<AssemblyName>KaraW3B.Interpreters</AssemblyName>
-		<PackageId>KaraW3B.Interpreters</PackageId>
+		<RootNamespace>KaraW3B.SDK.Helpers</RootNamespace>
+		<AssemblyName>KaraW3B.SDK.Helpers</AssemblyName>
+		<PackageId>KaraW3B.SDK.Helpers</PackageId>
 		<IsPackable>True</IsPackable>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="..\..\README.md" Pack="true" PackagePath="\" />
+		<None Include="README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace KaraW3B.Interpreters.Helpers
+namespace KaraW3B.SDK.Helpers
 {
     public static class LanguagesHelper
     {

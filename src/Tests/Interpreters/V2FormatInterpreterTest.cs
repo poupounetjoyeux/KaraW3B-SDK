@@ -1,5 +1,6 @@
-using KaraW3B.Interpreters.Helpers;
-using KaraW3B.Interpreters.Tests.Mocks;
+using KaraW3B.SDK.Helpers;
+using KaraW3B.SDK.Interpreters;
+using KaraW3B.SDK.Tests.Mocks;
 using NUnit.Framework;
 using System;
 using System.IO;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace KaraW3B.Interpreters.Tests.Interpreters
+namespace KaraW3B.SDK.Tests.Interpreters
 {
     [TestFixture]
     public class V2FormatInterpreterTest
@@ -41,7 +42,7 @@ namespace KaraW3B.Interpreters.Tests.Interpreters
             Assert.That(song.NotManagedHeaders, Is.EquivalentTo(new[]{ "#NOTMANAGED:Hey!" }));
 
             Assert.That(song.Notes, Has.Count.EqualTo(9));
-            Assert.That(song.Notes.Any(n => n.Type == InterpreterHelper.EndOfPhraseNoteType), Is.True);
+            Assert.That(song.Notes.Any(n => n.Type == SongConstants.EndOfPhraseNoteType), Is.True);
             Assert.That(song.Notes.Any(n => n.Type == '*'), Is.True);
             Assert.That(song.Notes.Any(n => n.Type == 'G'), Is.True);
             Assert.That(song.Notes.Any(n => n.Type == 'F'), Is.True);

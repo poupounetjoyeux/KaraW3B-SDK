@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using KaraW3B.Interpreters.Helpers;
-using KaraW3B.Interpreters.Interfaces;
-using KaraW3B.Interpreters.Models;
-using KaraW3B.Interpreters.Models.Exceptions;
+using KaraW3B.SDK.Helpers.Interfaces;
+using KaraW3B.SDK.Interpreters.Helpers;
+using KaraW3B.SDK.Interpreters.Models.Exceptions;
+using KaraW3B.SDK.Interpreters.Models.Interpreters;
 
-namespace KaraW3B.Interpreters.Parsers
+namespace KaraW3B.SDK.Interpreters.Parsers
 {
     internal sealed class UnversionedFormatParser : ParserBase
     {

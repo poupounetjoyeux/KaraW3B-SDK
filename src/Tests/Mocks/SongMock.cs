@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using KaraW3B.Interpreters.Interfaces;
+using KaraW3B.SDK.Helpers.Interfaces;
 
-namespace KaraW3B.Interpreters.Tests.Mocks
+namespace KaraW3B.SDK.Tests.Mocks
 {
     internal sealed class SongMock : IInterpretableSong
     {

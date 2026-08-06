@@ -1,10 +1,10 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using KaraW3B.Interpreters.Interfaces;
-using KaraW3B.Interpreters.Models.Exceptions;
-using KaraW3B.Interpreters.Writers;
+using KaraW3B.SDK.Helpers.Interfaces;
+using KaraW3B.SDK.Interpreters.Models.Exceptions;
+using KaraW3B.SDK.Interpreters.Writers;
 
-namespace KaraW3B.Interpreters
+namespace KaraW3B.SDK.Interpreters
 {
     public static class SongWriter
     {

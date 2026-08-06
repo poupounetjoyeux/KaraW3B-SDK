@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Text;
-using KaraW3B.Interpreters.Helpers;
+using KaraW3B.SDK.Interpreters.Helpers;
 
-namespace KaraW3B.Interpreters.Models
+namespace KaraW3B.SDK.Interpreters.Models.Interpreters
 {
     internal sealed class ParsingOptions
     {

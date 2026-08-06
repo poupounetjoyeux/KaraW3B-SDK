@@ -1,6 +1,6 @@
-﻿using KaraW3B.Interpreters.Interfaces;
+﻿using KaraW3B.SDK.Helpers.Interfaces;
 
-namespace KaraW3B.Interpreters.Models.Analyzes
+namespace KaraW3B.SDK.Helpers.Models.Analyzes
 {
     public sealed class NoteAnalyzeError
     {

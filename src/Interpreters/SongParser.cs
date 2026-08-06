@@ -1,15 +1,16 @@
-﻿using System;
+﻿using KaraW3B.SDK.Helpers;
+using KaraW3B.SDK.Helpers.Interfaces;
+using KaraW3B.SDK.Interpreters.Helpers;
+using KaraW3B.SDK.Interpreters.Models.Exceptions;
+using KaraW3B.SDK.Interpreters.Models.Interpreters;
+using KaraW3B.SDK.Interpreters.Parsers;
+using System;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
-using KaraW3B.Interpreters.Helpers;
-using KaraW3B.Interpreters.Interfaces;
-using KaraW3B.Interpreters.Models;
-using KaraW3B.Interpreters.Models.Exceptions;
-using KaraW3B.Interpreters.Parsers;
 
-namespace KaraW3B.Interpreters
+namespace KaraW3B.SDK.Interpreters
 {
     public static class SongParser
     {
@@ -242,7 +243,7 @@ namespace KaraW3B.Interpreters
 
         private static bool IsEofMarker(string line)
         {
-            return line.Trim().Equals(InterpreterHelper.EndOfFileMarker.ToString(), StringComparison.InvariantCultureIgnoreCase);
+            return line.Trim().Equals(SongConstants.EndOfFileMarker.ToString(), StringComparison.InvariantCultureIgnoreCase);
         }
     }
 }

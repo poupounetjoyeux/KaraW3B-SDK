@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace KaraW3B.Interpreters.Interfaces
+namespace KaraW3B.SDK.Helpers.Interfaces
 {
     public interface ISongMedley
     {

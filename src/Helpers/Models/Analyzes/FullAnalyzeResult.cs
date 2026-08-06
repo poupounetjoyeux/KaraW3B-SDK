@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace KaraW3B.Interpreters.Models.Analyzes
+namespace KaraW3B.SDK.Helpers.Models.Analyzes
 {
     public sealed class FullAnalyzeResult
     {

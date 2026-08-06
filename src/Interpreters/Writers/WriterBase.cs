@@ -1,15 +1,16 @@
-﻿using System;
+﻿using KaraW3B.SDK.Helpers;
+using KaraW3B.SDK.Helpers.Interfaces;
+using KaraW3B.SDK.Interpreters.Helpers;
+using KaraW3B.SDK.Interpreters.Models.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using KaraW3B.Interpreters.Helpers;
-using KaraW3B.Interpreters.Interfaces;
-using KaraW3B.Interpreters.Models.Exceptions;
 
-namespace KaraW3B.Interpreters.Writers
+namespace KaraW3B.SDK.Interpreters.Writers
 {
     internal abstract class WriterBase
     {
@@ -123,7 +124,7 @@ namespace KaraW3B.Interpreters.Writers
             }
 
             await WriteNotes();
-            await _writer.WriteAsync(InterpreterHelper.EndOfFileMarker);
+            await _writer.WriteAsync(SongConstants.EndOfFileMarker);
         }
 
         private async Task WriteCommonCoreHeaders()
@@ -191,9 +192,9 @@ namespace KaraW3B.Interpreters.Writers
 
         private async Task WriteNote(ISongNote note)
         {
-            if (note.Type == InterpreterHelper.EndOfPhraseNoteType)
+            if (note.Type == SongConstants.EndOfPhraseNoteType)
             {
-                await _writer.WriteLineAsync($"{InterpreterHelper.EndOfPhraseNoteType} {note.StartBeat.ToString(CultureInfo.InvariantCulture)}");
+                await _writer.WriteLineAsync($"{SongConstants.EndOfPhraseNoteType} {note.StartBeat.ToString(CultureInfo.InvariantCulture)}");
                 return;
             }
 

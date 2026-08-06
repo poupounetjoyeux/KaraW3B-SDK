@@ -1,4 +1,4 @@
-﻿namespace KaraW3B.Interpreters.Models
+﻿namespace KaraW3B.SDK.Interpreters.Models.Interpreters
 {
     public sealed class InterpreterAlert
     {

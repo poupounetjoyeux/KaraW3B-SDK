@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace KaraW3B.Interpreters.Models.Exceptions
+namespace KaraW3B.SDK.Interpreters.Models.Exceptions
 {
     public sealed class KaraW3BEncodingException : Exception
     {
